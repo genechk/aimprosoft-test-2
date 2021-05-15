@@ -1,0 +1,54 @@
+@font-face {
+  font-family: 'bank-support-icons';
+  src: url('./fonts/bank-support-icons.eot?26630696');
+  src: url('./fonts/bank-support-icons.eot?26630696#iefix')
+      format('embedded-opentype'),
+    url('./fonts/bank-support-icons.woff2?26630696') format('woff2'),
+    url('./fonts/bank-support-icons.woff?26630696') format('woff'),
+    url('./fonts/bank-support-icons.ttf?26630696') format('truetype'),
+    url('./fonts/bank-support-icons.svg?26630696#bank-support-icons')
+      format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^='icon-']:before,
+[class*=' icon-']:before {
+  font-family: 'bank-support-icons';
+  font-style: normal;
+  font-weight: normal;
+  speak: never;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: 0.2em;
+  text-align: center;
+
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: 0.2em;
+
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-check:before {
+  content: '\e800';
+} /* '' */
+.icon-lock:before {
+  content: '\e801';
+} /* '' */
+.icon-user:before {
+  content: '\e802';
+} /* '' */
+.icon-cross:before {
+  content: '\e803';
+} /* '' */

@@ -1,0 +1,46 @@
+// Color Scheme
+$color-background: #fff;
+$color-primary: #999999;
+$color-secondary: #666666;
+$color-interactive: #36a2c1;
+$color-header: #2fa2c3;
+$color-button-text: #fff;
+$color-button-shadow: #2d7f96;
+$color-form-icons: $color-primary;
+$color-success-icon: #008a46;
+$color-success-border: #048c48;
+$color-failure: #ed1f24;
+$color-form-border: rgba($color-primary, 0.33);
+$color-input-border: rgba($color-primary, 0.28);
+$color-input-border: #e3e3e3;
+
+// Measurements
+$form-width: 440px;
+$form-height: 311px;
+$form-vertical-padding: 34px;
+$form-horizontal-padding: 70px;
+$form-border-radius: 5px;
+
+$form-element-height: 40px;
+
+// TODO: Scope to button
+$button-padding-x: 26px;
+$button-padding-y: 10px;
+$button-width: 93px;
+$button-border-radius: 5px;
+$button-letter-spacing: -0.1px;
+
+// TODO: Scope to input
+$input-padding: 10px;
+$input-padding-left: 40px;
+$input-width: 294px;
+$input-height: $form-element-height;
+
+// Font names
+$font-light: 'Helvetica Neue Light', Helvetica, Arial, sans-serif;
+$font-bold: 'Helvetica Neue Bold', Helvetica, Arial, sans-serif;
+$font-regular: 'Helvetica Neue Regular', Helvetica, Arial, sans-serif;
+
+// Animation durations
+$duration-button: 200ms;
+$duration-input: 500ms;

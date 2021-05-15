@@ -12,6 +12,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '../styles/_variables.scss';
+
 .error-message {
   width: 100%;
   margin: 0;
@@ -19,11 +21,11 @@ export default {
   margin-top: 5px;
   position: absolute;
   bottom: -17px;
-  color: #ed1f24;
+  color: $color-failure;
   text-align: left;
-  font: 11px 'Helvetica Neue Regular', Helvetica, Arial, sans-serif;
+  font: 11px $font-regular;
 
   opacity: 1;
-  transition: opacity 500ms;
+  transition: opacity $duration-input;
 }
 </style>

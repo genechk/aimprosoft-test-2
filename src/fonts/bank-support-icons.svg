@@ -1,0 +1,18 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2021 by original authors @ fontello.com</metadata>
+<defs>
+<font id="bank-support-icons" horiz-adv-x="1000" >
+<font-face font-family="bank-support-icons" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="icon-check" unicode="&#xe800;" d="M967 850l-600-599-334 332v-400l334-333 600 600v400z" horiz-adv-x="1000" />
+
+<glyph glyph-name="icon-lock" unicode="&#xe801;" d="M708 433v125c0 0 0 292-291 292-292 0-292-292-292-292v-125h-125v-583h833v583h-125z m-250-321v-137h-83v137c-25 14-42 41-42 71 0 46 38 84 84 84 46 0 83-38 83-84 0-30-17-57-42-71m125 321h-333v125c0 35 0 167 167 167 166 0 166-132 166-167v-125z" horiz-adv-x="833" />
+
+<glyph glyph-name="icon-user" unicode="&#xe802;" d="M708 306v-86c16-7 34-15 54-23 20-9 41-18 62-27 21-10 43-19 64-28 22-10 43-18 63-26 19-8 37-16 52-22 16-6 29-11 38-14 21-8 37-19 50-34 13-14 23-30 30-45 9-19 15-38 19-57v-94h-1140v94c4 19 11 38 20 57 7 15 18 31 30 45 13 15 29 26 49 34 10 3 24 8 40 15 17 6 35 14 56 23 20 8 42 17 65 27 23 10 45 20 68 30 22 9 44 19 63 28 20 9 38 16 53 23v83c-1 4-2 10-5 18-2 9-4 17-7 25-2 10-6 21-10 32-14 26-26 56-34 89-8 33-12 69-12 106 0 50 6 91 16 126 10 34 25 62 43 83 18 22 39 37 63 47 25 10 50 15 78 15 28 0 54-5 78-14 24-10 45-25 63-46 19-22 33-49 44-84 10-34 15-76 15-126 0-37-4-72-12-105-8-33-19-62-33-89-4-12-8-24-11-34-3-10-6-18-8-27-3-9-4-15-4-19" horiz-adv-x="1140" />
+
+<glyph glyph-name="icon-cross" unicode="&#xe803;" d="M1000 650l-200 200-300-300-300 300-200-200 300-300-300-300 200-200 300 300 300-300 200 200-300 300 300 300z" horiz-adv-x="1000" />
+</font>
+</defs>
+</svg>

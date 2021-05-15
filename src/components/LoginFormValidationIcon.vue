@@ -1,14 +1,6 @@
 <template>
-  <img
-    v-if="isValid"
-    class="icon-success"
-    src="https://icongr.am/entypo/check.svg?size=16&color=008a46"
-  />
-  <img
-    v-else
-    class="icon-failure"
-    src="https://icongr.am/entypo/cross.svg?size=16&color=ed1f24"
-  />
+  <div v-if="isValid" class="icon-check"></div>
+  <div v-else class="icon-cross"></div>
 </template>
 
 <script>
@@ -21,10 +13,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-img {
-  width: 16px;
-  height: 16px;
-  position: absolute;
-  right: -20px;
+@import '../styles/variables';
+
+.icon-check {
+  color: $color-success-icon;
+}
+
+.icon-cross {
+  color: $color-failure;
 }
 </style>
