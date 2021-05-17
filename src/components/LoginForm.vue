@@ -109,15 +109,34 @@ export default {
 
 <style lang="scss">
 @import '../styles/_variables.scss';
-// FixIt: Duplicates variables.scss
-$form-width: 440px;
-$form-height: 311px;
-$form-vertical-padding: 34px;
-$form-horizontal-padding: 70px;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.form-header {
+  margin: $header-margin-top $header-margin-x;
+  margin-bottom: $header-margin-bottom;
+  letter-spacing: -0.55px;
+  padding-left: 3px;
+  width: 100%;
+  text-align: left;
+  font: bold $header-font-size $font-bold;
+  color: $color-header;
+
+  & .form-subhead {
+    font: 18px $font-light;
+    color: $color-primary;
+    letter-spacing: -0.18px;
+    margin-left: -5px;
+  }
+}
 
 .login-form {
   width: $form-width - $form-horizontal-padding;
-  height: $form-height - $form-vertical-padding;
+  height: $form-height - $form-vertical-padding / 2;
   max-height: $form-height;
   padding: ($form-vertical-padding / 2) ($form-horizontal-padding / 2);
   border: 1px solid $color-form-border;
@@ -132,11 +151,12 @@ $form-horizontal-padding: 70px;
 }
 
 .form-message {
-  padding: 0;
-  margin: 0;
   line-height: 1;
-  margin-left: 35px;
-  margin-bottom: 17px;
+  padding: 0;
+  padding-left: $border-position-adjustment / 2;
+  margin: 0;
+  margin-left: $form-horizontal-padding / 2;
+  margin-bottom: $form-vertical-padding;
 
   font: 12px $font-light;
   letter-spacing: -0.12px;
@@ -144,23 +164,6 @@ $form-horizontal-padding: 70px;
   a {
     color: $color-interactive;
     text-decoration: none;
-  }
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.form-header {
-  margin-left: 70px;
-  font: bold 41.36px $font-bold;
-  color: $color-header;
-
-  & .form-subhead {
-    font: 18px $font-light;
-    color: $color-primary;
   }
 }
 </style>

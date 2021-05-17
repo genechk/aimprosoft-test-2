@@ -1,17 +1,14 @@
 <template>
-  <div class="icon" :class="[`icon-${image}`, ...classList]"></div>
+  <div class="icon" :class="`icon-${image}`"></div>
 </template>
 
 <script>
 export default {
   name: 'BaseIcon',
   props: {
-    image: String,
-    classList: {
-      type: Array,
-      default() {
-        return [];
-      },
+    image: {
+      type: String,
+      default: 'blank',
     },
   },
 };

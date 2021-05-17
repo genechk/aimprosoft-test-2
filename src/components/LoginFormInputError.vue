@@ -17,8 +17,10 @@ export default {
 .error-message {
   width: 100%;
   margin: 0;
-  padding: 0;
   margin-top: 5px;
+  padding: 0;
+  padding-left: 3px;
+  letter-spacing: -0.18px;
   position: absolute;
   bottom: -17px;
   color: $color-failure;

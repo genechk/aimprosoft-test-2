@@ -12,6 +12,7 @@
     "@testing-library/user-event": "^13.1.9",
     "@testing-library/vue": "^6.4.2",
     "core-js": "^3.6.5",
+    "normalize-scss": "^7.0.1",
     "vue": "^3.0.0"
   },
   "devDependencies": {

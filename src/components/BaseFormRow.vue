@@ -11,13 +11,17 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '../styles/_variables.scss';
+
 .form-row {
-  margin: 0;
+  margin: ($form-vertical-padding / 2 + $border-position-adjustment)
+    ($form-horizontal-padding / 2);
   padding: 0;
+  padding-left: $border-position-adjustment / 2;
+
   position: relative;
   display: flex;
   justify-content: stretch;
   align-items: center;
-  margin: 17px 35px;
 }
 </style>

@@ -1,15 +1,21 @@
 <template>
   <form-row>
-    <input
+    <FormInput
       @blur="onBlur"
       @input="onInput"
       :name="name"
       :type="type"
       :placeholder="label"
       :aria-label="label"
+      :class="isValid ? 'success' : 'error'"
+      class="form-input"
     />
-    <Icon :image="icon" class="input-icon" />
-    <ValidationIcon :isValid="isValid" v-if="!isPristine" />
+    <InputIcon :image="icon" class="form-input-icon" />
+    <ValidationIcon
+      :isValid="isValid"
+      v-if="!isPristine"
+      class="form-validation-icon"
+    />
     <Error v-if="!isValid && !isPristine" :message="errorMessage" />
   </form-row>
 </template>
@@ -17,6 +23,7 @@
 <script>
 import BaseIcon from './BaseIcon.vue';
 import BaseFormRow from './BaseFormRow.vue';
+import BaseFormInput from './BaseFormInput.vue';
 import LoginFormInputError from './LoginFormInputError.vue';
 import LoginFormValidationIcon from './LoginFormValidationIcon.vue';
 
@@ -26,8 +33,9 @@ export default {
   components: {
     Error: LoginFormInputError,
     ValidationIcon: LoginFormValidationIcon,
-    Icon: BaseIcon,
+    InputIcon: BaseIcon,
     FormRow: BaseFormRow,
+    FormInput: BaseFormInput,
   },
   props: {
     content: String,
@@ -57,37 +65,39 @@ export default {
 <style lang="scss" scoped>
 @import '../styles/_variables.scss';
 
-// FixIt: Dupllicates variables.scss
-$input-padding: 10px;
-$input-padding-left: 40px;
-$input-width: 294px;
-$input-height: 40px;
-
-input {
-  border-radius: 5px;
-  color: $color-secondary;
-  font-size: 14px;
-  background: $color-background;
-  border: 1px solid $color-input-border;
-
-  // TODO: Check if necessary
-  box-sizing: content-box;
-  width: $input-width - $input-padding - $input-padding-left;
-  height: $input-height - 2 * $input-padding;
-  padding: $input-padding;
+.form-input {
   padding-left: $input-padding-left;
-  transition: border $duration-input;
+}
 
+.success {
+  &,
   &:hover,
   &:focus {
-    outline: none;
-    border: 1px solid $color-primary;
+    border: 1px solid $color-success-input-border;
   }
 }
 
-.input-icon {
+.form-input-icon {
   position: absolute;
-  left: 8px;
+  left: 14px;
   color: $color-form-icons;
+  opacity: 0.5;
+  font-size: 12px;
+
+  // FixIt: Dirty hack to avoid adjusting icon sizes in webfont
+  &.icon-lock {
+    font-size: 13px;
+    margin-top: -3px;
+  }
+}
+
+.form-validation-icon {
+  margin-left: 3px;
+
+  // Another dirty hack, but here it’s probably an issue with mockup
+  &.icon-check {
+    margin-top: 2px;
+    margin-left: 7px;
+  }
 }
 </style>

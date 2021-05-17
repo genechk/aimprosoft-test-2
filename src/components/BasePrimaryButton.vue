@@ -11,12 +11,7 @@ export default {
 <style lang="scss" scoped>
 @import '../styles/_variables.scss';
 
-$button-font-size: 18px;
-$button-padding-x: 26px;
-$button-padding-y: 10px;
 $button-height: $form-element-height;
-$button-border-radius: 5px;
-$button-letter-spacing: -0.18px;
 
 button {
   display: block;

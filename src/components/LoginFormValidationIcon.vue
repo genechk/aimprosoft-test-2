@@ -1,11 +1,16 @@
 <template>
-  <div v-if="isValid" class="icon-check"></div>
-  <div v-else class="icon-cross"></div>
+  <Icon v-if="isValid" image="check" />
+  <Icon v-else image="cross" />
 </template>
 
 <script>
+import BaseIcon from './BaseIcon.vue';
+
 export default {
   name: 'LoginFormValidationIcon',
+  components: {
+    Icon: BaseIcon,
+  },
   props: {
     isValid: Boolean,
   },

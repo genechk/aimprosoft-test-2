@@ -19,9 +19,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '../styles/_variables.scss';
 .login-button {
-  margin-top: 23px;
-  margin-left: 35px;
-  margin-bottom: 20px;
+  margin-top: ($form-vertical-padding / 2 + 1px);
+  margin-left: ($form-horizontal-padding / 2 + $border-position-adjustment);
+  margin-bottom: $buttom-margin-bottom;
 }
 </style>
