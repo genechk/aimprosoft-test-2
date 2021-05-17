@@ -128,7 +128,7 @@ export default {
 
   & .form-subhead {
     font: 18px $font-light;
-    color: $color-primary;
+    color: $color-secondary;
     letter-spacing: -0.18px;
     margin-left: -5px;
   }

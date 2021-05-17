@@ -45,4 +45,13 @@ body {
   width: 100%;
   overflow: hidden;
 }
+
+// Selection styles
+::selection {
+  @at-root {
+    *#{&} {
+      background: #ededed;
+    }
+  }
+}
 </style>
